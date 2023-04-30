@@ -10,9 +10,9 @@ function onSubmit(e) {
   const {
     elements: { delay, step, amount },
   } = e.currentTarget;
-  delayEl = Number(delay.value);
-  stepEl = Number(step.value);
-  amountEl = Number(amount.value);
+  let delayEl = Number(delay.value);
+  let stepEl = Number(step.value);
+  let amountEl = Number(amount.value);
 
   currentDelay = delayEl + stepEl;
 
